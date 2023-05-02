@@ -21,7 +21,7 @@ function Hero({ heroItems }) {
     >
       {heroItems?.map((heroItem, i) => {
         return (
-          <div className="mx-24">
+          <div className="mx-24" key={i}>
             <SwiperSlide className="" key={i}>
               <div className="mx-">
                 <div className={heroImage}>
