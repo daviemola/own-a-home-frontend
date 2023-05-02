@@ -7,6 +7,7 @@ import Promo from "@/components/home-page/promo";
 import About from "@/components/home-page/about";
 import HeaderOne from "@/components/header/header-1";
 import SearchInput from "@/components/home-page/searchinput";
+import CarouselSection from "@/components/home-page/carousel";
 
 function HomePage(props) {
   return (
@@ -16,7 +17,8 @@ function HomePage(props) {
         <meta name="description" content=". " />
       </Head>
       <HeaderOne />
-      <Hero heroItems={props.heroItems} />
+      <CarouselSection heroItems={props.heroItems} />
+      {/* <Hero heroItems={props.heroItems} /> */}
       <SearchInput />
       <Products products={props.products} />
       <Promo />

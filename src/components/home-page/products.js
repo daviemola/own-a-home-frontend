@@ -13,8 +13,8 @@ function Products({ products }) {
   return (
     <Fragment>
       <section id="services" className="text-gray-600">
-        <div className="custom-container px-6 py-12 mx-auto">
-          <div className="flex flex-wrap -m-4">
+        <div className="custom-container px-6 mx-auto">
+          <div className="flex flex-wrap">
             {products.slice(0, 4).map((product, index) => (
               <Link
                 href="/product"
@@ -28,11 +28,30 @@ function Products({ products }) {
                       className="object-cover object-center w-full h-full block"
                       src={`${product.image}`}
                     />
+                    <figcaption className="absolute top-[7.5%] text-sm text-white px-4">
+                      {index === 1 || index === 3 ? (
+                        <span className="bg-red-100 uppercase text-red-600 text-xs mr-2 px-4 py-2 rounded-lg font-bold">
+                          Sold Out
+                        </span>
+                      ) : (
+                        <span className="bg-green-100 uppercase text-green-600 text-xs mr-2 px-4 py-2 rounded-lg font-bold">
+                          Available
+                        </span>
+                      )}
+                    </figcaption>
                   </div>
                   <div className="mt-2">
-                    <h2 className="text-zinc-800 title-font text-lg font-medium">
-                      {`${product.title}`}
-                    </h2>
+                    <div className="flex justify-between">
+                      <h2 className="text-zinc-800 title-font text-lg font-medium">
+                        {`${product.title}`}
+                      </h2>
+                      <div className="md:hidden flex items-center my-1">
+                        <span className="bg-yellow-300 text-yellow-900 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">
+                          Bestseller
+                        </span>
+                      </div>
+                    </div>
+
                     <div>
                       <div className="flex items-center">
                         <LocationIcon />
@@ -72,7 +91,7 @@ function Products({ products }) {
                           10% off
                         </span>
                       </div>
-                      <div className="flex items-center my-1">
+                      <div className="md:flex hidden items-center my-1">
                         <span className="bg-yellow-300 text-yellow-900 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">
                           Bestseller
                         </span>

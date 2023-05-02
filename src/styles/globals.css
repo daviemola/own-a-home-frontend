@@ -35,6 +35,17 @@ textarea:focus-visible {
   }
 }
 
+@layer utilities {
+  /* @responsive { */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* overflow-x: auto; */
+    /* width: 0px; */
+    /* background: transparent */
+  }
+  /* } */
+}
+
 /*----------------------------------------*/
 /*  - header
 /*----------------------------------------*/

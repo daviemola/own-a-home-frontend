@@ -1,6 +1,6 @@
 ---
-title: Your Property Place
-image: /background/bg-im-one.jpg
+title: Your Property Place 2
+image: /background/bg-img-one.jpg
 heroYear: 2022
 twitterIcon: "FaTwitter"
 facebookIcon: "FaFacebookF"
