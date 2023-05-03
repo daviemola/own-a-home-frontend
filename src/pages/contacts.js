@@ -4,6 +4,7 @@ import Promo from "@/components/home-page/promo";
 import HeaderThree from "@/components/header/header-3";
 import Contactus from "@/components/svgicons/contactus";
 import Phone from "@/components/svgicons/Phone";
+import { getAllItems, getFeaturedItems } from "../lib/items-util";
 
 export default function ContactPage() {
   return (
