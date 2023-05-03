@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import Bathtab from "../svgicons/Bathtab";
 import Bedrooms from "../svgicons/Bedrooms";
@@ -8,26 +8,56 @@ import HouseSize from "../svgicons/HouseSize";
 import LocationIcon from "../svgicons/Location";
 import NairaIcon from "../svgicons/NairaIcon";
 import OutlineStar from "../svgicons/OutlineStar";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 function Products({ products }) {
+  const [slide, setSlide] = useState(0);
+  const [current, setCurrent] = useState(0);
+  const numberofslides = 6;
+
+  const updateCurrentSlide = () => {
+    setCurrent(current + 1);
+    if (current + 1 === numberofslides) setCurrent(0);
+  };
+
   return (
     <Fragment>
       <section id="services" className="text-gray-600">
         <div className="custom-container px-6 mx-auto">
           <div className="flex flex-wrap">
             {products.slice(0, 4).map((product, index) => (
-              <Link
-                href="/product"
-                key={index}
-                className="lg:w-1/4 md:w-1/2 p-4 w-full"
-              >
+              <div key={index} className="lg:w-1/4 md:w-1/2 p-4 w-full">
                 <div className="">
                   <div className="block relative h-full rounded-lg overflow-hidden">
-                    <img
-                      alt="ecommerce"
-                      className="object-cover object-center w-full h-full block"
-                      src={`${product.image}`}
-                    />
+                    <Carousel
+                      infiniteLoop={false}
+                      showArrows={true}
+                      autoPlay={false}
+                      stopOnHover={true}
+                      animationHandler="fade"
+                      swipeable={false}
+                      showIndicators={true}
+                      showStatus={false}
+                      showThumbs={false}
+                      interval={10000}
+                      onChange={() => {
+                        updateCurrentSlide();
+                      }}
+                      selectedItem={slide}
+                    >
+                      <img
+                        alt="ecommerce"
+                        className="object-cover object-center w-full h-full block"
+                        src={`${product.image}`}
+                      />
+                      <img
+                        alt="ecommerce"
+                        className="object-cover object-center w-full h-full block"
+                        src={`${product.image}`}
+                      />
+                    </Carousel>
+
                     <figcaption className="absolute top-[7.5%] text-sm text-white px-4">
                       {index === 1 || index === 3 ? (
                         <span className="bg-red-100 uppercase text-red-600 text-xs mr-2 px-4 py-2 rounded-lg font-bold">
@@ -99,7 +129,7 @@ function Products({ products }) {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
           <div className="flex mx-auto justify-center mt-8">

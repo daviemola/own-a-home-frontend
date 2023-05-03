@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="../favicon.png" />
       </Head>
       <Component {...pageProps} />
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
     </Layout>
   );
 }

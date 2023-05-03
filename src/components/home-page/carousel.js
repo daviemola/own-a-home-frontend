@@ -1,7 +1,6 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import Image from "next/image";
 import Link from "next/link";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
@@ -38,9 +37,13 @@ export default function CarouselSection({ heroItems }) {
       selectedItem={slide}
     >
       {heroItems.map((item, index) => (
-        <div key={index} className="custom-container px-6 pt-24">
-          <div className="h-[50vh] bg-opacity-80 bg-zinc-900/90 bg-no-repeat bg-cover bg-[url('/background/bg-img-one.jpg')] rounded-xl flex justify-center">
-            <div className="flex justify-center items-center">
+        <div key={index} className="custom-container px-6 pt-28">
+          <div className="h-[50vh] rounded-xl relative bg-opacity-100 flex justify-center items-center">
+            <img
+              src="/background/bg-img-one.jpg"
+              className="w-full h-full object-cover rounded-xl bg-blend-overlay"
+            />
+            <div className="flex justify-center items-center absolute bg-black/50 h-full w-full rounded-xl">
               <div>
                 <div
                   className="text-2xl leading-8 text-center font-bold text-white uppercase md:mb-4 mb-2 block"

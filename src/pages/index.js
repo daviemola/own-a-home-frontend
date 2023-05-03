@@ -8,6 +8,7 @@ import About from "@/components/home-page/about";
 import HeaderOne from "@/components/header/header-1";
 import SearchInput from "@/components/home-page/searchinput";
 import CarouselSection from "@/components/home-page/carousel";
+import HeaderThree from "@/components/header/header-3";
 
 function HomePage(props) {
   return (
@@ -16,7 +17,8 @@ function HomePage(props) {
         <title>Own a Home</title>
         <meta name="description" content=". " />
       </Head>
-      <HeaderOne />
+      {/* <HeaderOne /> */}
+      <HeaderThree />
       <CarouselSection heroItems={props.heroItems} />
       {/* <Hero heroItems={props.heroItems} /> */}
       <SearchInput />
