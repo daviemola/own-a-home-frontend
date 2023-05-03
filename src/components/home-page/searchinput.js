@@ -17,7 +17,7 @@ export default function SearchInput() {
     "Bangalow",
   ];
   return (
-    <div className="custom-container px-8 py-12 mx-auto">
+    <div className="custom-container px-8 py-12 mx-auto mt-16">
       <form>
         <div className="flex">
           <label
