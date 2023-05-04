@@ -3,25 +3,34 @@ import { AiFillStar, AiOutlinePlus, AiOutlineStar } from "react-icons/ai";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Bathtab from "../svgicons/Bathtab";
+import Beach from "../svgicons/Beach";
 import Bedrooms from "../svgicons/Bedrooms";
 import Bulb from "../svgicons/Bulb";
 import Calendar from "../svgicons/Calendar";
+import Couch from "../svgicons/Couch";
 import Document from "../svgicons/Document";
+import Elevator from "../svgicons/Elevator";
 import Exclamation from "../svgicons/Exclamation";
+import Finished from "../svgicons/Finished";
+import Gated from "../svgicons/Gated";
 import HouseSize from "../svgicons/HouseSize";
 import LocationIcon from "../svgicons/Location";
+import SandFill from "../svgicons/SandFill";
+import Security from "../svgicons/Security";
+import Serviced from "../svgicons/Serviced";
+import Tropical from "../svgicons/Tropical";
 
 export default function CarouselSection() {
   return (
     <Fragment>
       <div>
-        <div className="lg:flex flex-col items-center pb-8">
+        <div className="xl:flex xl:items-center pb-8">
           <div className="flex items-center">
             <h1 className="text-black text-xl lg:text-2xl font-semibold">
               3 Bedroom Apartment
             </h1>
           </div>
-          <div className="flex items-center ml-0 lg:ml-12">
+          <div className="flex items-center ml-0 xl:ml-12">
             <LocationIcon />
             <p className="ml-2 text-base lg:text-lg">
               10001 Street, Banana Island, Lagos, Nigeria
@@ -118,7 +127,7 @@ export default function CarouselSection() {
             <a href="#" className="underline text-blue-600">
               A development by Middlechase Property Ltd
             </a>
-            <div className="mt-4 lg:flex flex-col items-center">
+            <div className="mt-4 lg:flex lg:flex-row flex-col items-center">
               <span className="flex items-center">
                 <Document />
                 <span className="ml-2">Property Title: C of O</span>
@@ -144,7 +153,7 @@ export default function CarouselSection() {
               </button>
             </div>
           </div>
-          <div className="w-full mt-8 rounded-md border-none sm:border border-gray-200">
+          <div className="w-full mt-8 rounded-md border border-gray-200">
             <div className="px-6 pt-6 flex items-center border-b border-gray-200">
               <p className="ml-2 font-semibold px-6 pb-2 border-b-2 border-blue-800">
                 Property Details
@@ -221,32 +230,40 @@ export default function CarouselSection() {
                   <span className="ml-2">24 Hours Power</span>
                 </div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Bulb />
-                  <span className="ml-2">24 Hours Power</span>
+                  <Couch />
+                  <span className="ml-2">Fully Furnished</span>
                 </div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Bulb />
-                  <span className="ml-2">24 Hours Power</span>
+                  <Beach />
+                  <span className="ml-2">Beach Front</span>
                 </div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Bulb />
-                  <span className="ml-2">24 Hours Power</span>
+                  <SandFill />
+                  <span className="ml-2">Sand Fill</span>
                 </div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Bulb />
-                  <span className="ml-2">24 Hours Power</span>
+                  <Security />
+                  <span className="ml-2">Security</span>
                 </div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Bulb />
-                  <span className="ml-2">24 Hours Power</span>
+                  <Finished />
+                  <span className="ml-2">Fully Finished</span>
                 </div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Bulb />
-                  <span className="ml-2">24 Hours Power</span>
+                  <Elevator />
+                  <span className="ml-2">Elevator Available</span>
                 </div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Bulb />
-                  <span className="ml-2">24 Hours Power</span>
+                  <Serviced />
+                  <span className="ml-2">24 Hour Service</span>
+                </div>
+                <div className="flex items-center gap-2 mb-4">
+                  <Tropical />
+                  <span className="ml-2">Tropical</span>
+                </div>
+                <div className="flex items-center gap-2 mb-4">
+                  <Gated />
+                  <span className="ml-2">Gated Community</span>
                 </div>
               </div>
             </div>
