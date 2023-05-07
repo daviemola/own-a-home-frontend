@@ -19,7 +19,7 @@ function PrivacyContent(props) {
             <div className="post-area pt-155">
               <div className="container">
                 <div className="flex flex-col text-center w-full mb-20">
-                  <h1 className="md:text-4xl text-2xl font-semibold mb-4 text-gray-900">
+                  <h1 className="md:text-4xl text-2xl font-bold mb-4 text-gray-900">
                     {data.title}
                   </h1>
                   <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -29,7 +29,7 @@ function PrivacyContent(props) {
                 </div>
                 <div className="lg:grid lg:grid-cols-12 xl:gap-x-[50px] gap-x-[30px]">
                   <div className="lg:col-span-12">
-                    <h2 className="font-bold text-[24px] leading-[36px] max-w-[710px] mb-[20px]">
+                    <h2 className="font-semibold text-[24px] leading-[36px] max-w-[710px] mb-[20px]">
                       CUSTOM NEEDS/SUPPORT
                     </h2>
                     <p className="text-gray-500 leading-[27px] mb-[15px]">
@@ -46,7 +46,7 @@ function PrivacyContent(props) {
                       <li>LED Screens, 3D Designs etc.</li>
                     </ul>
 
-                    <h2 className="font-bold text-[24px] leading-[36px] max-w-[710px] mb-[15px]">
+                    <h2 className="font-semibold text-[24px] leading-[36px] max-w-[710px] mb-[15px]">
                       CANCELLATION POLICY
                     </h2>
                     <p className="text-gray-500 leading-[27px] mb-[20px]">
@@ -54,7 +54,7 @@ function PrivacyContent(props) {
                       deducted from the total amount paid.
                     </p>
 
-                    <h2 className="font-bold text-[24px] leading-[36px] max-w-[710px] mb-[15px]">
+                    <h2 className="font-semibold text-[24px] leading-[36px] max-w-[710px] mb-[15px]">
                       INSTALLMENT POLICY
                     </h2>
                     <ul className="space-y-1 text-gray-500 list-disc list-inside">
@@ -69,7 +69,7 @@ function PrivacyContent(props) {
 
                     <div className="single-item pt-[50px]">
                       <div className="content pt-[45px]">
-                        <h2 className="font-bold text-[24px] leading-[38px] mb-[15px]">
+                        <h2 className="font-semibold text-[24px] leading-[38px] mb-[15px]">
                           DEFAULT ON INSTALLMENT
                         </h2>
                         <p className="text-gray-500 leading-[27px]">

@@ -1,12 +1,10 @@
 import { Fragment } from "react";
 import Head from "next/head";
 import { getAllItems, getFeaturedItems } from "../lib/items-util";
-import Products from "../components/listing/products";
 import Promo from "@/components/home-page/promo";
 import SearchInput from "@/components/home-page/searchinput";
 import HeaderThree from "@/components/header/header-3";
-import Layout from "@/components/companies/Layout";
-import FilterSearch from "@/components/listing/filtersearch";
+import Layout from "../components/companies/layout";
 import CompanyContainer from "@/components/companies/companies";
 import SideAd from "@/components/companies/sideadvert";
 
