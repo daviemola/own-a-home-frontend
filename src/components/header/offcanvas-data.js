@@ -6,17 +6,17 @@ export const OffcanvasData = [
   },
   {
     title: "Properties",
-    path: "#",
+    path: "/listing",
     cName: "offcanvas-text",
   },
   {
     title: "Blog",
-    path: "/products",
+    path: "/blogs",
     cName: "offcanvas-text",
   },
   {
     title: "Services",
-    path: "/faqs",
+    path: "/services",
     cName: "offcanvas-text",
   },
   {
@@ -26,7 +26,7 @@ export const OffcanvasData = [
   },
   {
     title: "Contact",
-    path: "/contact",
+    path: "/contacts",
     cName: "offcanvas-text",
   },
 ];

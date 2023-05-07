@@ -61,7 +61,7 @@ export default function HeaderThree() {
                   </a>
                 </li>
                 <li className={router.pathname == "/contact" ? "active" : ""}>
-                  <Link href="#">
+                  <Link href="/contacts">
                     <button className="py-1 px-8 flex justify-center text-white bg-[#494CBE] rounded-full">
                       Contact
                     </button>
