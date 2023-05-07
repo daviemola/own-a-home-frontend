@@ -51,14 +51,14 @@ export default function CarouselSection() {
         >
           <div>
             <img
-              src="/background/aod-lg.png"
-              className="w-auto h-auto rounded"
+              src="/companies/bg-img-one.png"
+              className="w-auto rounded"
               alt="game-img"
             />
           </div>
           <div className="">
             <img
-              src="/background/aod-lg.png"
+              src="/companies/bg-img-one.png"
               className="w-auto h-auto rounded"
               alt="game-img"
             />
