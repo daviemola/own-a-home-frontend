@@ -56,9 +56,9 @@ export default function HeaderThree() {
                   </Link>
                 </li>
                 <li className={router.pathname == "/posts" ? "active" : ""}>
-                  <a href="/about">
+                  <Link href="/about">
                     <span>About</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className={router.pathname == "/contact" ? "active" : ""}>
                   <Link href="/contacts">
@@ -119,7 +119,7 @@ export default function HeaderThree() {
                     {OffcanvasData.map((item, index) => {
                       return (
                         <li key={index} className="text-black">
-                          <Link href="#">{item.title}</Link>
+                          <Link href={item.path}>{item.title}</Link>
                         </li>
                       );
                     })}
