@@ -1,11 +1,8 @@
 import { Fragment } from "react";
 import Head from "next/head";
 import { getAllItems, getFeaturedItems } from "../lib/items-util";
-import Hero from "../components/home-page/hero";
 import Products from "../components/home-page/products";
 import Promo from "@/components/home-page/promo";
-import About from "@/components/home-page/about";
-import HeaderOne from "@/components/header/header-1";
 import SearchInput from "@/components/home-page/searchinput";
 import CarouselSection from "@/components/home-page/carousel";
 import HeaderThree from "@/components/header/header-3";
@@ -17,7 +14,6 @@ function HomePage(props) {
         <title>Own a Home</title>
         <meta name="description" content=". " />
       </Head>
-      {/* <HeaderOne /> */}
       <HeaderThree />
       <CarouselSection heroItems={props.heroItems} />
       {/* <Hero heroItems={props.heroItems} /> */}

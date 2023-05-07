@@ -464,7 +464,7 @@ export default function CarouselSection() {
                     <div className="mx-auto mb-3 mt-2 space-y-4 sm:flex sm:space-y-0">
                       <div className="relative w-full">
                         <label
-                          for="email"
+                          htmlFor="email"
                           className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                         >
                           Email address
@@ -502,94 +502,94 @@ export default function CarouselSection() {
               </section>
             </div>
             <div className="lg:px-12 md:px-8 sm:px-6 px-4 py-6">
-              <div class="mt-12">
-                <h2 class="text-lg font-semibold leading-7 text-gray-900">
+              <div className="mt-12">
+                <h2 className="text-lg font-semibold leading-7 text-gray-900">
                   Request More Information
                 </h2>
-                <div class="my-6 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6">
-                  <div class="sm:col-span-3">
+                <div className="my-6 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6">
+                  <div className="sm:col-span-3">
                     <label
-                      for="first-name"
-                      class="block text-sm font-medium leading-6 text-gray-900"
+                      htmlFor="first-name"
+                      className="block text-sm font-medium leading-6 text-gray-900"
                     >
                       First name
                     </label>
-                    <div class="mt-2">
+                    <div className="mt-2">
                       <input
                         type="text"
                         name="first-name"
                         id="first-name"
                         autocomplete="given-name"
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
                     </div>
                   </div>
-                  <div class="sm:col-span-3">
+                  <div className="sm:col-span-3">
                     <label
-                      for="last-name"
-                      class="block text-sm font-medium leading-6 text-gray-900"
+                      htmlFor="last-name"
+                      className="block text-sm font-medium leading-6 text-gray-900"
                     >
                       Last name
                     </label>
-                    <div class="mt-2">
+                    <div className="mt-2">
                       <input
                         type="text"
                         name="last-name"
                         id="last-name"
                         autocomplete="family-name"
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
                     </div>
                   </div>
-                  <div class="sm:col-span-3">
+                  <div className="sm:col-span-3">
                     <label
-                      for="first-name"
-                      class="block text-sm font-medium leading-6 text-gray-900"
+                      htmlFor="first-name"
+                      className="block text-sm font-medium leading-6 text-gray-900"
                     >
                       Phone Number
                     </label>
-                    <div class="mt-2">
+                    <div className="mt-2">
                       <input
                         type="text"
                         name="first-name"
                         id="first-name"
                         autocomplete="given-name"
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
                     </div>
                   </div>
-                  <div class="sm:col-span-3">
+                  <div className="sm:col-span-3">
                     <label
-                      for="last-name"
-                      class="block text-sm font-medium leading-6 text-gray-900"
+                      htmlFor="last-name"
+                      className="block text-sm font-medium leading-6 text-gray-900"
                     >
                       Whatsapp Number
                     </label>
-                    <div class="mt-2">
+                    <div className="mt-2">
                       <input
                         type="text"
                         name="last-name"
                         id="last-name"
                         autocomplete="family-name"
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
                     </div>
                   </div>
-                  <div class="col-span-full">
+                  <div className="col-span-full">
                     <label
-                      for="street-address"
-                      class="block text-sm font-medium leading-6 text-gray-900"
+                      htmlFor="street-address"
+                      className="block text-sm font-medium leading-6 text-gray-900"
                     >
                       Street address
                     </label>
-                    <div class="mt-2">
+                    <div className="mt-2">
                       <textarea
                         type="text"
                         rows={3}
                         name="street-address"
                         id="street-address"
                         autocomplete="street-address"
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       ></textarea>
                     </div>
                   </div>

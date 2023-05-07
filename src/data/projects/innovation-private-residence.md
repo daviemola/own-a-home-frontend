@@ -2,7 +2,7 @@
 title: "After"
 excerpt: "project-two"
 date: "2022-01-12"
-image: bg-image-seven.jpg
+image: bg/four.jpg
 # excerpt: Suitanable Space
 location: Calle Blancos, Costa Rica
 clientName: Alex Stinson

@@ -1,14 +1,10 @@
 import { useState, useEffect } from "react";
-import { BsFacebook, BsTelegram, BsTwitter } from "react-icons/bs";
-import { FaDiscord, FaMedium } from "react-icons/fa";
-import { MdMail } from "react-icons/md";
-import Image from "next/image";
 import BlueLogo from "../header/blue-logo";
-import { AiFillTwitterCircle } from "react-icons/ai";
 import Facebook from "../svgicons/Facebook";
 import Twitter from "../svgicons/Twitter";
 import YouTube from "../svgicons/YouTube";
 import Instagram from "../svgicons/Instagram";
+import Link from "next/link";
 
 function Footer() {
   let [isOpen, setIsOpen] = useState(false);
@@ -39,38 +35,20 @@ function Footer() {
             <div className="text-center sm:text-left col-span-1">
               <nav className="">
                 <ul className="space-y-1 md:space-y-4 text-base lg:text-left text-center cursor-pointer">
-                  <li className="text-gray-400 font-bold uppercase cursor-pointer transition-all hover:text-white/75">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://meta-xseed.gitbook.io/metaxseed-games-studio-usdxseed/"
-                    >
-                      Whitepaper
-                    </a>
+                  <li className="text-white tracking-wider font-light uppercase cursor-pointer transition-all hover:text-white/75">
+                    Quick Links
                   </li>
                   <li className="text-zinc-100 cursor-pointer transition-all hover:text-white/75">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://meta-xseed.gitbook.io/metaxseed-games-studio-usdxseed/"
-                    >
-                      Whitepaper
-                    </a>
+                    <Link href="/about">About</Link>
                   </li>
                   <li className="text-zinc-100 cursor-pointer transition-all hover:text-white/75">
-                    <a
-                      href="https://docs.google.com/presentation/d/1n33uTwCbqi3RnSLIxhGcTiK0ccQCH4klerCywgxUIS4"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Pitchdeck
-                    </a>
+                    <Link href="/contacts">Contact</Link>
                   </li>
-                  <li
-                    className="text-zinc-100 cursor-pointer transition-all hover:text-white/75"
-                    onClick={openModal}
-                  >
-                    Contribution Guidelines
+                  <li className="text-zinc-100 cursor-pointer transition-all hover:text-white/75">
+                    <Link href="/blogs">Blog</Link>
+                  </li>
+                  <li className="text-zinc-100 cursor-pointer transition-all hover:text-white/75">
+                    <Link href="/services">Services</Link>
                   </li>
                 </ul>
               </nav>
@@ -78,17 +56,20 @@ function Footer() {
             <div className="text-center sm:text-left col-span-1">
               <nav className="lg:text-left text-center">
                 <ul className="space-y-1 md:space-y-4 text-base">
-                  <li className="text-gray-400 uppercase font-semibold cursor-pointer transition-all hover:text-white/75">
+                  <li className="text-zinc-100 tracking-wider font-light uppercase cursor-pointer transition-all hover:text-white/75">
                     Services
                   </li>
                   <li className="text-zinc-100 cursor-pointer transition hover:text-white/75">
-                    <a href="#">About Us</a>
+                    Architecture
                   </li>
                   <li className="text-zinc-100 cursor-pointer transition hover:text-white/75">
-                    <a href="#">The Games</a>
+                    <Link href="#">Verify Property</Link>
                   </li>
                   <li className="text-zinc-100 cursor-pointer transition hover:text-white/75">
-                    <a href="#">Token Utility</a>
+                    <Link href="#">Real Estate</Link>
+                  </li>
+                  <li className="text-zinc-100 cursor-pointer transition hover:text-white/75">
+                    <Link href="#">Interior Design</Link>
                   </li>
                 </ul>
               </nav>
@@ -109,7 +90,7 @@ function Footer() {
                       <div className="items-center mx-auto mb-3 mt-2 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                         <div className="relative w-full">
                           <label
-                            for="email"
+                            htmlFor="email"
                             className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                           >
                             Email address
@@ -155,12 +136,15 @@ function Footer() {
               <p className="mt-0 text-base text-white sm:order-first sm:mt-0">
                 &copy; Own a Home Ltd {date}
               </p>
-              <p className="mt-0 text-base text-white">
+              <Link
+                href="/company/privacy"
+                className="mt-0 text-base text-white"
+              >
                 <span className="block sm:inline">Private Policy </span>
-              </p>
-              <p className="mt-0 text-base text-white">
+              </Link>
+              <Link href="/company/terms" className="mt-0 text-base text-white">
                 <span className="block sm:inline">Terms of Service </span>
-              </p>
+              </Link>
             </div>
             <div className="md:hidden flex-col-reverse items-center gap-4">
               <p className="mt-0 text-base text-white">

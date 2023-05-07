@@ -2,7 +2,7 @@
 title: "Before"
 excerpt: "project-two"
 date: "2022-01-12"
-image: bg-image-six.jpg
+image: bg/three.jpg
 # excerpt: Commercial
 location: Calle Blancos, Costa Rica
 clientName: Alex Stinson

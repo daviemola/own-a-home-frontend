@@ -41,17 +41,17 @@ export default function HeaderThree() {
                   </Link>
                 </li>
                 <li className={router.pathname == "/about" ? "active" : ""}>
-                  <Link href="#about">
+                  <Link href="/listings">
                     <span>Properties</span>
                   </Link>
                 </li>
                 <li className={router.pathname == "/projects" ? "active" : ""}>
-                  <Link href="#services">
+                  <Link href="/services">
                     <span>Services</span>
                   </Link>
                 </li>
                 <li className={router.pathname == "/posts" ? "active" : ""}>
-                  <Link href="#testimonials">
+                  <Link href="/blogs">
                     <span>Blog</span>
                   </Link>
                 </li>

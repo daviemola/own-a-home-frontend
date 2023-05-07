@@ -2,7 +2,7 @@
 title: "After"
 excerpt: "project-three"
 date: "2022-01-12"
-image: bg-image-five.jpg
+image: bg/six.jpg
 # excerpt: Copper Brass
 location: Calle Blancos, Costa Rica
 clientName: Alex Stinson

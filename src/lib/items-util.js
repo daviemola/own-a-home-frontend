@@ -10,6 +10,7 @@ export function getItemsFiles(type) {
 export function getItemData(itemIdentifier, type) {
   const itemsDirectory = path.join(`${process.cwd()}/src/data/${type}`);
   const itemSlug = itemIdentifier.replace(/\.md$/, ""); // removes the file extension
+  console.log(itemsDirectory);
   const filePath = path.join(itemsDirectory, `${itemSlug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(fileContent);

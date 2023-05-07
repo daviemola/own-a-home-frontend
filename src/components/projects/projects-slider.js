@@ -26,30 +26,31 @@ function ProjectSlider(props) {
 
   return (
     <>
-      <div className="swiper-button-wrap flex cursor-pointer text-[#999999] text-[30px]">
-        <div
-          className="swiper-button transition-all hover:text-black mr-[10px]"
-          ref={prevRef}
-        >
-          <AiIcons.AiOutlineLeft />
+      <div className="flex justify-between py-6">
+        <div>
+          <h3 className="text-xl text-gray-900 font-semibold">
+            Featured Projects
+          </h3>
         </div>
-        <div
-          className="swiper-button transition-all hover:text-black"
-          ref={nextRef}
-        >
-          <AiIcons.AiOutlineRight />
+        <div className="swiper-button-wrap flex cursor-pointer text-[#999999] text-[30px]">
+          <div
+            className="swiper-button transition-all hover:text-black mr-[10px]"
+            ref={prevRef}
+          >
+            <AiIcons.AiOutlineLeft />
+          </div>
+          <div
+            className="swiper-button transition-all hover:text-black"
+            ref={nextRef}
+          >
+            <AiIcons.AiOutlineRight />
+          </div>
         </div>
       </div>
       <Swiper
-        pagination={{ clickable: true, type: "bullets" }}
-        spaceBetween={5}
+        pagination={false}
+        spaceBetween={10}
         breakpoints={{
-          1200: {
-            slidesPerView: 4,
-          },
-          992: {
-            slidesPerView: 3,
-          },
           576: {
             slidesPerView: 2,
           },

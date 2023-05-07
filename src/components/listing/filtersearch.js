@@ -17,7 +17,7 @@ export default function FilterSearch() {
           <div className="px-6 rounded-md pb-6 pt-4">
             <div className="sm:col-span-3">
               <label
-                for="country"
+                htmlFor="country"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Country
@@ -37,7 +37,7 @@ export default function FilterSearch() {
             </div>
             <div className="sm:col-span-3">
               <label
-                for="country"
+                htmlFor="country"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 State
@@ -57,7 +57,7 @@ export default function FilterSearch() {
             </div>
             <div className="sm:col-span-3">
               <label
-                for="country"
+                htmlFor="country"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Estate
@@ -77,7 +77,7 @@ export default function FilterSearch() {
             </div>
             <div className="sm:col-span-3">
               <label
-                for="country"
+                htmlFor="country"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Property
@@ -97,7 +97,7 @@ export default function FilterSearch() {
             </div>
             <div className="sm:col-span-3">
               <label
-                for="country"
+                htmlFor="country"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Bedrooms
@@ -117,7 +117,7 @@ export default function FilterSearch() {
             </div>
             <div className="sm:col-span-3">
               <label
-                for="country"
+                htmlFor="country"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Min Price
@@ -136,7 +136,7 @@ export default function FilterSearch() {
               </div>
               <div className="sm:col-span-3">
                 <label
-                  for="country"
+                  htmlFor="country"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
                   Max Price

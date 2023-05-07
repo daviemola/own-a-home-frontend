@@ -21,7 +21,7 @@ export default function SearchInput() {
       <form>
         <div className="flex">
           <label
-            for="location-search"
+            htmlFor="location-search"
             className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
           >
             Your Email
@@ -54,7 +54,7 @@ export default function SearchInput() {
       <div className="overflow-x-auto py-2 hide-scrollbar">
         <div className="inline-flex space-x-2 px-2 pt-6">
           {categories.map((cat, index) => (
-            <>
+            <div className="" key={index}>
               {index === 0 ? (
                 <button
                   type="button"
@@ -70,7 +70,7 @@ export default function SearchInput() {
                   {cat}
                 </button>
               )}
-            </>
+            </div>
           ))}
         </div>
       </div>
